@@ -78,3 +78,4 @@
 // Hack to remove FF8+'s built-in JSON-as-text viewer. I'm sure this is the wrong
 // place to do this, but it works.
 Components.classes['@mozilla.org/categorymanager;1'].getService(Ci.nsICategoryManager).deleteCategoryEntry('Gecko-Content-Viewers', 'application/json', false);
+Components.classes['@mozilla.org/categorymanager;1'].getService(Ci.nsICategoryManager).deleteCategoryEntry('Gecko-Content-Viewers', 'application/json+hal', false);
